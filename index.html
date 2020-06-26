@@ -23,84 +23,84 @@
   </header>
   <div class="container">                                 
     <div id="9AM" class="hour">
-      <button type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
-      <p><br>9AM</p>
+      <button id= "saveBtn" type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
+      <p>9AM</p>
     <div class="time-block"></div>
-      <br>
+    <textarea rows=1 cols=50></textarea>
     </div> 
   </div>
 
   <div class="container">                                 
     <div id="10AM" class="hour">
-      <button type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
-      <p><br>10AM</p>
+      <button id= "saveBtn" type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
+      <p>10AM</p>
     <div class="time-block"></div>
-      <br>
+    <textarea rows=1 cols=50></textarea>
     </div>
   </div>
 
   <div class="container">                                 
       <div id="11AM" class="hour">
-        <button type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
-        <p><br>11AM</p>
+        <button id= "saveBtn" type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
+        <p>11AM</p>
       <div class="time-block"></div>
-        <br>
+      <textarea rows=1 cols=50></textarea>
     </div>
   </div>
 
 </header>
 <div class="container">                                 
   <div id="12PM" class="hour">
-    <button type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
-    <p><br>12PM</p>
+    <button id= "saveBtn" type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
+    <p>12PM</p>
   <div class="time-block"></div>
-    <br>
+  <textarea rows=1 cols=50></textarea>
   </div> 
 </div>
 
 <div class="container">                                 
   <div id="1PM" class="hour">
-    <button type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
-    <p><br>1PM</p>
+    <button id= "saveBtn" type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
+    <p>1PM</p>
   <div class="time-block"></div>
-    <br>
+  <textarea rows=1 cols=50></textarea>
   </div>
 </div>
 
 <div class="container">                                 
     <div id="2PM" class="hour">
-      <button type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
-      <p><br>2PM</p>
+      <button id= "saveBtn" type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
+      <p>2PM</p>
     <div class="time-block"></div>
-      <br>
+    <textarea rows=1 cols=50></textarea>
   </div>
 </div>
   
 </header>
 <div class="container">                                 
   <div id="3PM" class="hour">
-    <button type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
-    <p><br>3PM</p>
+    <button id= "saveBtn" type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
+    <p>3PM</p>
   <div class="time-block"></div>
-    <br>
+  <textarea rows=1 cols=50></textarea>
   </div> 
 </div>
 
 <div class="container">                                 
   <div id="4PM" class="hour">
-    <button type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
-    <p><br>4PM</p>
+    <button id= "saveBtn" type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
+    <p>4PM</p>
   <div class="time-block"></div>
-    <br>
+  <textarea rows=1 cols=50></textarea>
   </div>
 </div>
 
 <div class="container">                                 
     <div id="5PM" class="hour">
-      <button type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
-      <p><br>5PM</p>
+      <button id= "saveBtn" type="button" class="saveBtn saveBtn i:hover" style="float:right">SAVE</button>
+      <p>5PM</p>
     <div class="time-block"></div>
-      <br>
+    <textarea rows=1 cols=50></textarea>
   </div>
 </div>
 
@@ -115,8 +115,6 @@
 
     
 
-    
-
 
   </script>
 
@@ -124,3 +122,21 @@
 </body>
 
 </html>
+
+          <!----Attempted storage code that did not work----->
+
+<!---$(document).ready(function() {
+  var saveBtn = document.getElementById("saveBtn");
+
+  for (i=0; i < 9; i++) {
+    $("#save"+ i + "input").val(localStorage.getItem("note" + i));
+  }
+
+  function saveBtn() {
+    $("#saveBtn").removeClass("notSaved").addClass("Saved");
+    for (var i = 1; i < 9; i++) {
+      localStorage.setItem("save" + i, $("#save" + i + "input").val());
+    }
+  }
+});
+on("click", saveBtn);

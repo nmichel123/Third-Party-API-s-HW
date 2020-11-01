@@ -15,7 +15,7 @@
 
 <body>
   <header class="jumbotron">
-    <h1 class="display-3">Work Day Scheduler</h1>
+    <h1 class="display-3">Work Day Planner</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
      
@@ -122,21 +122,3 @@
 </body>
 
 </html>
-
-          <!----Attempted storage code that did not work----->
-
-<!---$(document).ready(function() {
-  var saveBtn = document.getElementById("saveBtn");
-
-  for (i=0; i < 9; i++) {
-    $("#save"+ i + "input").val(localStorage.getItem("note" + i));
-  }
-
-  function saveBtn() {
-    $("#saveBtn").removeClass("notSaved").addClass("Saved");
-    for (var i = 1; i < 9; i++) {
-      localStorage.setItem("save" + i, $("#save" + i + "input").val());
-    }
-  }
-});
-on("click", saveBtn);
